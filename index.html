@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>kakao </title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+</head>
+<body>
+<script src="./dist/main.js" async></script>
+    
+<h3><strong>현재시간</strong></h3>
+<input class="flatpickr" id="currentTime">
+
+<h3><strong>알람등록</strong></h3>
+<form name="content" >
+    <div>
+    시계모드:<select id='timerType'>
+                <option value="normal">일반</option>
+                <option value="vibe">진동</option>
+                <option value="night">야간</option>
+            </select>
+        </div>
+    <div>
+    시간설정:<input id='date' type='date' >
+    </div>
+    <div>
+    알람모드:<select id='alarmMode'>
+                <option value="nomal">일반</option>
+                <option value="imergency">긴급</option>
+             </select><input id='alarmTime'>
+    </div>
+    <div>
+    내용 : <input id='context' >
+    </div>
+    <button id='sendBtn' type="button">내용추가</button>
+</form>
+
+<h3><strong>알람목록</strong></h3>
+<div id = 'alarm_list'>
+    <ul>
+    </ul>
+</div>
+    
+
+</body>
+
+</html>
