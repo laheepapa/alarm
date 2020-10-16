@@ -45,7 +45,7 @@ let checkAlarm = () => { // 알람 순회 & 체크
             if (alarm.alarmTime === time ) { // 알람-기준시간 도달 시
                 if(alarm.enable){
                     let result = getAlarmWay(alarm.alarmMode)
-                    alert(result); // alert
+                    alert(result); // 결과 알림
                 }
             }
         })
@@ -59,7 +59,7 @@ const alarmTime = flatpickr("#alarmTime", { // 알람 세팅 시간 관리
         defaultDate: now,
 });
 
-const date = flatpickr("#date", {});
+const date = flatpickr("#date", {}); // 날짜 등록
 
     //2. 알람 등록
     document.getElementById('sendBtn').addEventListener('click' , (e) =>{
@@ -85,7 +85,7 @@ const date = flatpickr("#date", {});
         if(!flag){
             alarmList.push(alarmModel); 
         } else {
-            alert(`${alarmModel.alarmTime}은 이미 존재 합니다.`); // alert
+            alert(`${alarmModel.alarmTime}은 이미 존재 합니다.`); // 중복 
         }
 
         if(alarmList.length > 0){
@@ -108,7 +108,7 @@ const date = flatpickr("#date", {});
 
     })
 
-//4. 알람 목록 + 삭제, 중지 버튼 추가
+//4. 알람 목록 및 삭제, 중지 버튼 추가
 let renderAlarmList= (items) => { // 알람 리스트 재렌더링
         document.getElementById('alarm_list').textContent = '';
         items.map(alarm => {

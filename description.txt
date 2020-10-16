@@ -31,3 +31,6 @@ webpack, babel을 이용하여, 하나의 bundle.js로 빌드, babel-loader 사�
 webpack-dev-server를 이용하여, Dev 서버 구동. (npm run start:dev)
 
 브라우저 실행 후 localhost:8080 확인 합니다.
+
+배포시
+dist 폴더의 파일을 복사 해서, Production 서버에 반영합니다
