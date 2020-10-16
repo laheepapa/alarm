@@ -7,14 +7,14 @@
 
 </head>
 <body>
-<script src="./dist/main.js" async></script>
+<script src="./dist/bundle.js" async></script>
     
 <h3><strong>현재시간</strong></h3>
 <input class="flatpickr" id="currentTime">
 
 <h3><strong>알람등록</strong></h3>
 <form name="content" >
-    <div>
+    <div >
     시계모드:<select id='timerType'>
                 <option value="normal">일반</option>
                 <option value="vibe">진동</option>
@@ -22,7 +22,7 @@
             </select>
         </div>
     <div>
-    시간설정:<input id='date' type='date' >
+    시간설정:<input id='date' >
     </div>
     <div>
     알람모드:<select id='alarmMode'>
@@ -42,7 +42,6 @@
     </ul>
 </div>
     
-
 </body>
 
 </html>

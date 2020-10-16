@@ -1,0 +1,33 @@
+1.사용된 버전 목록
+-babel
+@babel/cli : 7.7.0
+@babel/core : 7.7.2
+@babel/preset-env : 7.7.1
+@babel/plugin-proposal-class-properties : 7.7.0
+@babel/polyfill : 7.7.4
+
+-webpack
+webpack : 4.41.2
+webpack-cli : 3.3.10
+
+-webpack plugi-in : ES6=> ES5
+babel-loader : 8.0.6
+
+-dev-server
+webpack-dev-server : 3.11.0
+
+2.제출 파일 구성
+src/model.js : 알람 모델
+src/index.js : main 
+
+dist/bundle.js : output js
+dist/bundle.js.map : output js
+
+index.html: output html
+
+
+webpack, babel을 이용하여, 하나의 bundle.js로 빌드, babel-loader 사용.(npm run build)
+
+webpack-dev-server를 이용하여, Dev 서버 구동. (npm run start:dev)
+
+브라우저 실행 후 localhost:8080 확인 합니다.

@@ -59,6 +59,8 @@ const alarmTime = flatpickr("#alarmTime", { // 알람 세팅 시간 관리
         defaultDate: now,
 });
 
+const date = flatpickr("#date", {});
+
     //2. 알람 등록
     document.getElementById('sendBtn').addEventListener('click' , (e) =>{
         
@@ -69,7 +71,8 @@ const alarmTime = flatpickr("#alarmTime", { // 알람 세팅 시간 관리
             alarmTime : document.getElementById('alarmTime').value,
             context : document.getElementById('context').value,
             enable : true
-        }
+        }   
+
         const alarmModel = new AlarmModel(data);
 
         var flag = false;        
